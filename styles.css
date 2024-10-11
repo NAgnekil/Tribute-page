@@ -1,12 +1,59 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf0f1;
+  margin: 0;
+  padding: 0;
+  color: #1c2321;
+}
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+hr {
+  width: 15%;
+  border: 2px solid #a5787a;
+  border-radius: 50px;
+}
+
+hr:last-of-type {
+  width: 50%;
+}
+
+header {
+  background-color: #ebc1c6;
+  width: 100%;
+  min-height: 9rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 1.8rem 0 1rem 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 section {
   width: 70%;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-top: 0.3rem;
 }
 
 figure {
@@ -20,16 +67,68 @@ figcaption {
   margin-top: 0.4rem;
 }
 
-span {
-  display: flex;
-  align-items: center;
+img {
+  border-radius: 55px;
+  max-width: 100%;
+  height: auto;
 }
 
 .milestone-desc {
   margin-left: 1rem;
+  margin-top: 0;
+  white-space: normal;
 }
 
-footer #image {
-  max-width: 100%;
-  height: auto;
+ul li span {
+  display: flex;
+  align-items: flex-start;
+}
+
+ul li strong {
+  white-space: nowrap;
+  flex-basis: 75px;
+  flex-shrink: 0;
+}
+
+.resources-section {
+  width: 100%;
+  text-align: center;
+  min-height: 9rem;
+  background-color: #ebc1c6;
+}
+
+.resources-section p {
+  margin: 3.8rem 0;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  width: 40%;
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden;
+}
+blockquote {
+  background-color: #faf0f1;
+  border: solid 4px #a5787a;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+  font-style: italic;
+}
+blockquote:before {
+  background-color: #faf0f1;
+  bottom: -10%;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  transform: rotate(-20deg) skew(60deg);
+}
+blockquote > * {
+  position: relative;
+  z-index: 1;
 }
